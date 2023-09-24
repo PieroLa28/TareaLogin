@@ -1,11 +1,12 @@
-
-
 img {
   max-width: 100%;
 }
 
 .login {
-  background-color: #7d8083;
+  background-image: url("https://c.wallhere.com/photos/ce/36/1920x1200_px_General-1197902.jpg!d");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
 }
 
@@ -41,7 +42,6 @@ img {
   font-size: 1rem;
 }
 
-
 .main {
   height: 100%;
   display: flex;
@@ -73,8 +73,6 @@ img {
   font-weight: bold;
   text-transform: uppercase;
 }
-
-
 
 .input:focus {
   border-color: rgb(12, 18, 23);
