@@ -1,6 +1,6 @@
 <div class="login">
     <main class="main">
-      <form class="form" [formGroup]="formInputs" (ngSubmit)="login()">
+      <form class="form">
         <div class="box-title">
           <h1 class="form__title">LOGIN</h1>
         </div>
@@ -10,7 +10,6 @@
             placeholder="Usuario"
             class="input"
             name="usuario"
-            formControlName="usuario"
           />
           <i class="fa fa-user fa-lg fa-fw icon" aria-hidden="true"></i>
         </div>
@@ -20,17 +19,12 @@
             placeholder="Contraseña"
             class="input"
             name="password"
-            formControlName = "password"
-            
           />
           <i class="fa fa-lock fa-lg fa-fw icon" aria-hidden="true"></i>
         </div>
-        <div class="text-invalid" *ngIf="false">
-          <p>¡Usuario y Contraseña no Validos!</p>
-        </div>
+      
         <div class="box-footer">
-          <button type="submit" class="btn btn-primary" 
-          [disabled]="formInputs.invalid">
+          <button type="submit" class="btn btn-primary">
             Ingresar
           </button>
         </div>
