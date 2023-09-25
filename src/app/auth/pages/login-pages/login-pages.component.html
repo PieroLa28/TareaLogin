@@ -1,17 +1,19 @@
 <div class="login">
-  <main class="main">
-    <form class="form">
+  <main class="principal">
+    <form class="formulario">
       <div class="box-title">
         <i class="pi pi-user" style="font-size: 5rem ;  padding: 2rem"></i>
       </div>
       <div class="inputWithIcon inputIconBg">
         <span class="p-float-label">
-          <p-password [feedback]="false"></p-password>
-          <label for="Usuario">Usuario</label>
+
+          <span class="p-float-label">
+            <input pInputText id="username" />
+            <label htmlFor="username">Usuario</label>
         </span>
-        <i class="fa fa-user fa-lg fa-fw icon" aria-hidden="true"></i>
+        </span>
       </div>
-      <div class="inputWithIcon inputIconBg">
+      <div class="inputWithIcon">
         <p-password [toggleMask]="true"></p-password>
         <i
           class="fa fa-lock fa-lg fa-fw icon"
@@ -21,13 +23,7 @@
       </div>
 
       <div class="box-footer">
-        <button type="submit" class="btn btn-primary">Ingresar</button>
-      </div>
-      <div class="text-invalid" *ngIf="verifyDataSession">
-        <p>¡Usuario y Contraseña no Validos!</p>
-      </div>
-      <div class="box-footer">
-        <a href="#" class="form__link">¿Olvidaste tu contraseña ?</a>
+        <p-button label="Ingresar" styleClass="p-button-ingresar"></p-button>
       </div>
     </form>
   </main>
