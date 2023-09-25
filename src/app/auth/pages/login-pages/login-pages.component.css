@@ -50,7 +50,7 @@ img {
 }
 
 .formulario {
-  background-color: #9798b0;
+  background-color: #7741ed;
   width: 300px;
   height: 400px;
   display: flex;
@@ -59,8 +59,7 @@ img {
 }
 
 .form__title {
-  font-family: "Black Ops One", cursive;
-  margin: 40px 0;
+  margin: 10px 0;
   font-size: 1.4rem;
   letter-spacing: 2px;
   text-align: center;
@@ -195,12 +194,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #dcdcdc;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  background-color: #8f4fd9;
 }
 
 .form__title {
