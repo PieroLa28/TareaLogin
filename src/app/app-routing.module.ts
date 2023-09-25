@@ -3,7 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then((e) => e.AuthModule)
+    loadChildren: () => import('./auth/auth.module').then((e) => e.AuthModule),
+  },
+  {
+    path: '**',
+    redirectTo: 'auth',
   },
 ];
 

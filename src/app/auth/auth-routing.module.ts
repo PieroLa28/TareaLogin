@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginPagesComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'login'
   }
 ];
 
